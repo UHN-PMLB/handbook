@@ -1,87 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/cbioportal/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/cbioportal/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/contributing/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/contributing/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/contributing/adding_content/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/contributing/adding_content/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/contributing/changelog/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/contributing/changelog/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/contributing/merging_pr/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/contributing/merging_pr/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/contributing/prerequisites/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/contributing/prerequisites/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/contributing/release_deployment/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/contributing/release_deployment/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/contributing/reviews/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/contributing/reviews/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/contributing/submitting_issues/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/contributing/submitting_issues/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/introduction/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/introduction/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/labguru/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/labguru/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/labguru/chatbot/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/labguru/chatbot/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/labguru/download/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/labguru/download/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/labguru/schema/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/labguru/schema/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/labguru/search/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/labguru/search/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/labguru/upload/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/labguru/upload/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/workflow/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/workflow/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/workflow/drug_testing/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/workflow/drug_testing/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/workflow/omics/RNAseq/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/workflow/omics/RNAseq/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/workflow/omics/WES/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/workflow/omics/WES/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/workflow/others/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/workflow/others/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
 </urlset>
