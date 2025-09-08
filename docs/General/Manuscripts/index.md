@@ -1,3 +1,0 @@
-# Manuscript Standards
-
-TODO::
