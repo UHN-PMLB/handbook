@@ -37,22 +37,22 @@ Here are the steps to add new content to the documentation:
     For example:
 
     ```console
-    $ jjjermiah/adding-getting-started-page
+    $ username/adding-getting-started-page
     OR
-    $ jjjermiah/13-docs-finish-tutorial-for-page-review
+    $ username/13-docs-finish-tutorial-for-page-review
     ```
 
 To **create a new branch and switch to it**, run the following command:
 
 ```console
 git checkout -b <branch-name>
-$ git checkout -b jjjermiah/adding-getting-started-page
+$ git checkout -b username/adding-getting-started-page
 ```
 
 If you already have a named branch, you can switch to it with the following command:
 
 ```console
-git switch jjjermiah/adding-getting-started-page
+git switch username/adding-getting-started-page
 ```
 
 ### 2. Add your new content to the `docs` directory
