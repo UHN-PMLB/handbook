@@ -1,7 +1,6 @@
 nav:
-    - General
-    - Workflow
-    - Lab_Data
-    - onboarding_offboarding
-    - contributing
-    - ...
+  - introduction
+  - labguru
+  - workflow
+  - cbioportal
+  - contributing

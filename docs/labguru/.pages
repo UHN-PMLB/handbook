@@ -1,0 +1,10 @@
+title: Labguru Database
+
+nav:
+    - Home: index.md
+    - schema
+    - upload
+    - search
+    - download
+    - chatbot
+    - ...

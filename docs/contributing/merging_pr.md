@@ -76,7 +76,7 @@ Feel free to modify the body of the commit message to include only the relevant 
 ### Verify GitHub Pages Deployment
 
 After merging the pull request, the changes will be deployed to GitHub Pages.
-Check the website at `https://bhklab.github.io/handbook/` to verify that the changes are correct.
+Check the website at `https://uhn-pmlb.github.io/handbook/` to verify that the changes are correct.
 
 ### Delete the branch
 
