@@ -1,5 +1,5 @@
 site_name: PMLB Handbook
-site_url: "https://UHN-PMLB.github.io/dev/handbook/" # Trailing slash is recommended
+site_url: "https://UHN-PMLB.github.io/dev/handbook/dev" # Trailing slash is recommended
 repo_url: https://github.com/UHN-PMLB/handbook
 repo_name: UHN-PMLB/handbook
 
