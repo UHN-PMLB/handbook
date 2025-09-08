@@ -1,7 +1,6 @@
 nav:
-    - general
-    - labguru
-    - workflow
-    - cbioportal
-    - contributing
-    - ...
+  - general
+  - labguru
+  - workflow
+  - cbioportal
+  - contributing
