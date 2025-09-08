@@ -1,103 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/General/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/General/lab_mission/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/General/Code_Of_Conduct/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/General/Manuscripts/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/General/Meetings/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/General/Presentations/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/General/Presentations/tools/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/General/Projects/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/Lab_Data/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/Lab_Data/Clinical_Data/introduction/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/Lab_Data/Drug_Testing_Data/temp/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/Lab_Data/Molecular_Data/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/Lab_Data/Molecular_Data/ATACseq/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/Lab_Data/Molecular_Data/Molecular_Data_Summary/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/Lab_Data/Molecular_Data/RNAseq/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/Lab_Data/Molecular_Data/WES/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/Lab_Data/Molecular_Data/WGS/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/Workflow/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/Workflow/Drug_Testing_Data_Workflow/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/Workflow/Molecular_Data_Workflow/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/Workflow/Molecular_Data_Workflow/RNAseq/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/Workflow/Molecular_Data_Workflow/WES/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/Workflow/Others/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/Workflow/PDO_SOP/</loc>
-         <lastmod>2025-09-08</lastmod>
-    </url>
-    <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/Workflow/PDX_SOP/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/cbioportal/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
@@ -133,15 +37,51 @@
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/onboarding_offboarding/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/introduction/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/onboarding_offboarding/Offboarding/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/labguru/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/onboarding_offboarding/Onboarding/</loc>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/labguru/chatbot/</loc>
+         <lastmod>2025-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/labguru/download/</loc>
+         <lastmod>2025-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/labguru/schema/</loc>
+         <lastmod>2025-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/labguru/search/</loc>
+         <lastmod>2025-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/labguru/upload/</loc>
+         <lastmod>2025-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/workflow/</loc>
+         <lastmod>2025-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/workflow/drug_testing/</loc>
+         <lastmod>2025-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/workflow/omics/RNAseq/</loc>
+         <lastmod>2025-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/workflow/omics/WES/</loc>
+         <lastmod>2025-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://UHN-PMLB.github.io/dev/handbook/dev/dev/workflow/others/</loc>
          <lastmod>2025-09-08</lastmod>
     </url>
 </urlset>
