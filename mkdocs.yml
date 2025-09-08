@@ -1,5 +1,5 @@
 site_name: PMLB Handbook
-site_url: "https://UHN-PMLB.github.io/dev/handbook/" # Trailing slash is recommended
+site_url: "https://UHN-PMLB.github.io/dev/handbook/dev" # Trailing slash is recommended
 repo_url: https://github.com/UHN-PMLB/handbook
 repo_name: UHN-PMLB/handbook
 
@@ -28,7 +28,7 @@ markdown_extensions:
 plugins:
   - redirects:                        # handles URL redirects for moved pages
       redirect_maps:
-        "index.md": "General/index.md"
+        "index.md": "introduction/index.md"
   - awesome-pages                     # simplifies configuring page titles and their order
   - search                            # necessary for search functionality to work
   - git-authors                       # adds authors to pages using git history
