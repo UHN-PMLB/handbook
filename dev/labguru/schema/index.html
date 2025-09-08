@@ -22,7 +22,7 @@
     
     
       
-        <title>Index - PMLB Handbook</title>
+        <title>Labguru Schema - PMLB Handbook</title>
       
     
     
@@ -81,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#labguru-schema" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -115,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              Labguru Schema
             
           </span>
         </div>
@@ -1432,6 +1437,106 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pmlb_case" class="md-nav__link">
+    <span class="md-ellipsis">
+      PMLB_case
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pmlb_specimen" class="md-nav__link">
+    <span class="md-ellipsis">
+      PMLB_specimen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pmlb_organoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      PMLB_organoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pmlb_xenograft" class="md-nav__link">
+    <span class="md-ellipsis">
+      PMLB_xenograft
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flow_assay" class="md-nav__link">
+    <span class="md-ellipsis">
+      flow_assay
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#growth_assay" class="md-nav__link">
+    <span class="md-ellipsis">
+      growth_assay
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#histology_assay" class="md-nav__link">
+    <span class="md-ellipsis">
+      histology_assay
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pathogen_assay" class="md-nav__link">
+    <span class="md-ellipsis">
+      pathogen_assay
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#str_assay" class="md-nav__link">
+    <span class="md-ellipsis">
+      STR_assay
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atac-rnaseq-wgs-wes" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATAC / RNAseq / WGS / WES
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1449,9 +1554,1221 @@
   
 
 
-  <h1>Index</h1>
-
-
+<h1 id="labguru-schema">Labguru Schema<a class="headerlink" href="#labguru-schema" title="Anchor link to this section for reference">#</a></h1>
+<p>This page documents the schema used in PMLB’s Labguru instance.<br />
+Each entity has its fields listed in a structured table.  </p>
+<p>Columns:<br />
+- <strong>Required</strong>: Is this field mandatory? (<code>Yes/No</code>)<br />
+- <strong>Field Type</strong>: Data type (e.g., string, integer, date)<br />
+- <strong>Input Hint</strong>: Guidance for data entry<br />
+- <strong>Permissible Values</strong>: Allowed controlled vocabulary, if any  </p>
+<hr />
+<h2 id="pmlb_case">PMLB_case<a class="headerlink" href="#pmlb_case" title="Anchor link to this section for reference">#</a></h2>
+<p><strong>Children:</strong> <code>PMLB_specimen</code></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required</th>
+<th>Field Type</th>
+<th>Input Hint</th>
+<th>Permissible Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sysid</td>
+<td>Yes</td>
+<td>string</td>
+<td>Unique identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>Yes</td>
+<td>string</td>
+<td>Case name</td>
+<td></td>
+</tr>
+<tr>
+<td>case_PPID</td>
+<td>Yes</td>
+<td>string</td>
+<td>Patient PPID</td>
+<td></td>
+</tr>
+<tr>
+<td>stem_PPID</td>
+<td>No</td>
+<td>string</td>
+<td>Stem PPID if applicable</td>
+<td></td>
+</tr>
+<tr>
+<td>primary_study_id</td>
+<td>Yes</td>
+<td>string</td>
+<td>Study ID</td>
+<td></td>
+</tr>
+<tr>
+<td>sex</td>
+<td>Yes</td>
+<td>categorical</td>
+<td>Male/Female/Other</td>
+<td>Male, Female</td>
+</tr>
+<tr>
+<td>oncotree_code</td>
+<td>Yes</td>
+<td>string</td>
+<td>Oncotree cancer code</td>
+<td>Oncotree codes</td>
+</tr>
+<tr>
+<td>primary_tumor_site</td>
+<td>Yes</td>
+<td>string</td>
+<td>Tumor site</td>
+<td></td>
+</tr>
+<tr>
+<td>cancer_type_detailed</td>
+<td>Yes</td>
+<td>string</td>
+<td>Detailed cancer type</td>
+<td></td>
+</tr>
+<tr>
+<td>smoke_history</td>
+<td>No</td>
+<td>categorical</td>
+<td>Smoking history</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>smoke_pack_year(PY)</td>
+<td>No</td>
+<td>numeric</td>
+<td>Pack-years smoked</td>
+<td></td>
+</tr>
+<tr>
+<td>ethnicity_self_assessed</td>
+<td>No</td>
+<td>string</td>
+<td>Self-reported</td>
+<td></td>
+</tr>
+<tr>
+<td>ethnicity_genome</td>
+<td>No</td>
+<td>string</td>
+<td>Genomic inferred</td>
+<td></td>
+</tr>
+<tr>
+<td>alias.id</td>
+<td>No</td>
+<td>string</td>
+<td>Alternate identifier</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="pmlb_specimen">PMLB_specimen<a class="headerlink" href="#pmlb_specimen" title="Anchor link to this section for reference">#</a></h2>
+<p><strong>Parent:</strong> <code>PMLB_case</code><br />
+<strong>Children:</strong> <code>PMLB_organoid</code>, <code>PMLB_xenograft</code>, <code>WGS</code>, <code>WES</code>, <code>RNAseq</code>, <code>ATAC</code></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required</th>
+<th>Field Type</th>
+<th>Input Hint</th>
+<th>Permissible Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sysid</td>
+<td>Yes</td>
+<td>string</td>
+<td>Unique specimen ID</td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>Yes</td>
+<td>string</td>
+<td>Specimen name</td>
+<td></td>
+</tr>
+<tr>
+<td>associate_study</td>
+<td>No</td>
+<td>string</td>
+<td>Related study</td>
+<td></td>
+</tr>
+<tr>
+<td>alias.id</td>
+<td>No</td>
+<td>string</td>
+<td>Alternate identifier</td>
+<td></td>
+</tr>
+<tr>
+<td>sample_class</td>
+<td>Yes</td>
+<td>categorical</td>
+<td>Sample class</td>
+<td>Tumor, Normal</td>
+</tr>
+<tr>
+<td>tumor_normal_designation</td>
+<td>Yes</td>
+<td>categorical</td>
+<td>Tumor/Normal</td>
+<td>Tumor, Normal</td>
+</tr>
+<tr>
+<td>primary_recurrence_metastasis</td>
+<td>No</td>
+<td>categorical</td>
+<td>Clinical designation</td>
+<td>Primary, Recurrence, Metastasis</td>
+</tr>
+<tr>
+<td>TNM_stage</td>
+<td>No</td>
+<td>string</td>
+<td>TNM staging</td>
+<td></td>
+</tr>
+<tr>
+<td>specimen_collection_site</td>
+<td>No</td>
+<td>string</td>
+<td>Collection site</td>
+<td></td>
+</tr>
+<tr>
+<td>specimen_collection_date</td>
+<td>No</td>
+<td>date</td>
+<td>yyyy-mm-dd</td>
+<td></td>
+</tr>
+<tr>
+<td>procedure</td>
+<td>No</td>
+<td>string</td>
+<td>Collection procedure</td>
+<td></td>
+</tr>
+<tr>
+<td>distributed_specimen_label</td>
+<td>No</td>
+<td>string</td>
+<td>Label</td>
+<td></td>
+</tr>
+<tr>
+<td>specimen_barcode</td>
+<td>No</td>
+<td>string</td>
+<td>Barcode</td>
+<td></td>
+</tr>
+<tr>
+<td>specimen_processor</td>
+<td>No</td>
+<td>string</td>
+<td>Person/role</td>
+<td></td>
+</tr>
+<tr>
+<td>SNAP_status</td>
+<td>No</td>
+<td>categorical</td>
+<td>Frozen in SNAP</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>history_blockID</td>
+<td>No</td>
+<td>string</td>
+<td>Block ID</td>
+<td></td>
+</tr>
+<tr>
+<td>specimen_weight(g)</td>
+<td>No</td>
+<td>numeric</td>
+<td>Weight in grams</td>
+<td></td>
+</tr>
+<tr>
+<td>specimen_volume(mL)</td>
+<td>No</td>
+<td>numeric</td>
+<td>Volume in mL</td>
+<td></td>
+</tr>
+<tr>
+<td>cell_yield(x10^6)</td>
+<td>No</td>
+<td>numeric</td>
+<td>Cell count in million</td>
+<td></td>
+</tr>
+<tr>
+<td>specimen_comment</td>
+<td>No</td>
+<td>text</td>
+<td>Free text</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="pmlb_organoid">PMLB_organoid<a class="headerlink" href="#pmlb_organoid" title="Anchor link to this section for reference">#</a></h2>
+<p><strong>Parent:</strong> <code>PMLB_specimen</code><br />
+<strong>Children:</strong> <code>growth_assay</code>, <code>pathogen_assay</code>, <code>flow_assay</code>, <code>STR_assay</code>, <code>histology_assay</code>, <code>WGS</code>, <code>WES</code>, <code>RNAseq</code>, <code>ATAC</code></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required</th>
+<th>Field Type</th>
+<th>Input Hint</th>
+<th>Permissible Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sysid</td>
+<td>Yes</td>
+<td>string</td>
+<td>Unique organoid ID</td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>Yes</td>
+<td>string</td>
+<td>Organoid name</td>
+<td></td>
+</tr>
+<tr>
+<td>organoid_PPID</td>
+<td>Yes</td>
+<td>string</td>
+<td>Organoid PPID</td>
+<td></td>
+</tr>
+<tr>
+<td>primary_study_name</td>
+<td>Yes</td>
+<td>string</td>
+<td>Study name</td>
+<td></td>
+</tr>
+<tr>
+<td>associate_studies</td>
+<td>No</td>
+<td>string</td>
+<td>Related studies</td>
+<td></td>
+</tr>
+<tr>
+<td>alias.id</td>
+<td>No</td>
+<td>string</td>
+<td>Alternate ID</td>
+<td></td>
+</tr>
+<tr>
+<td>sample_class</td>
+<td>Yes</td>
+<td>categorical</td>
+<td>Sample class</td>
+<td></td>
+</tr>
+<tr>
+<td>source_xenograft_modeID</td>
+<td>No</td>
+<td>string</td>
+<td>Source xenograft model ID</td>
+<td></td>
+</tr>
+<tr>
+<td>source_xenograft_passage</td>
+<td>No</td>
+<td>numeric</td>
+<td>Passage number</td>
+<td></td>
+</tr>
+<tr>
+<td>source_xenograft_collection_date</td>
+<td>No</td>
+<td>date</td>
+<td>yyyy-mm-dd</td>
+<td></td>
+</tr>
+<tr>
+<td>source_xenograft_collection_note</td>
+<td>No</td>
+<td>text</td>
+<td>Notes</td>
+<td></td>
+</tr>
+<tr>
+<td>sample_SNAP_status</td>
+<td>No</td>
+<td>categorical</td>
+<td>SNAP frozen</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>sample_histo/blockID</td>
+<td>No</td>
+<td>string</td>
+<td>Block ID</td>
+<td></td>
+</tr>
+<tr>
+<td>sample_weight(g)</td>
+<td>No</td>
+<td>numeric</td>
+<td>Weight in g</td>
+<td></td>
+</tr>
+<tr>
+<td>sample_volume(mL)</td>
+<td>No</td>
+<td>numeric</td>
+<td>Volume in mL</td>
+<td></td>
+</tr>
+<tr>
+<td>sample_cell_yield(x10^6)</td>
+<td>No</td>
+<td>numeric</td>
+<td>Cell count (million)</td>
+<td></td>
+</tr>
+<tr>
+<td>model_generated_by</td>
+<td>No</td>
+<td>string</td>
+<td>Lab/PI</td>
+<td></td>
+</tr>
+<tr>
+<td>model_generation_date</td>
+<td>No</td>
+<td>date</td>
+<td>yyyy-mm-dd</td>
+<td></td>
+</tr>
+<tr>
+<td>media</td>
+<td>No</td>
+<td>string</td>
+<td>Culture medium</td>
+<td></td>
+</tr>
+<tr>
+<td>split_ratio</td>
+<td>No</td>
+<td>numeric</td>
+<td>Ratio</td>
+<td></td>
+</tr>
+<tr>
+<td>passage_interval(day)</td>
+<td>No</td>
+<td>numeric</td>
+<td>Days</td>
+<td></td>
+</tr>
+<tr>
+<td>culture_note</td>
+<td>No</td>
+<td>text</td>
+<td>Notes</td>
+<td></td>
+</tr>
+<tr>
+<td>long_term_organoid</td>
+<td>No</td>
+<td>categorical</td>
+<td>Stored long term</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>PMLB_banked_status</td>
+<td>No</td>
+<td>categorical</td>
+<td>Banking status</td>
+<td>Banked, Not Banked</td>
+</tr>
+<tr>
+<td>PMLB_banked_location</td>
+<td>No</td>
+<td>string</td>
+<td>Location</td>
+<td></td>
+</tr>
+<tr>
+<td>PMLB_banked_comments</td>
+<td>No</td>
+<td>text</td>
+<td>Notes</td>
+<td></td>
+</tr>
+<tr>
+<td>PMLB_banked_date</td>
+<td>No</td>
+<td>date</td>
+<td>yyyy-mm-dd</td>
+<td></td>
+</tr>
+<tr>
+<td>PMLB_banked_by</td>
+<td>No</td>
+<td>string</td>
+<td>Person</td>
+<td></td>
+</tr>
+<tr>
+<td>deposit_distribution_permission</td>
+<td>No</td>
+<td>categorical</td>
+<td>Permission flag</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>tumor_normal_designation</td>
+<td>No</td>
+<td>categorical</td>
+<td>Tumor/Normal</td>
+<td></td>
+</tr>
+<tr>
+<td>organoid_comment</td>
+<td>No</td>
+<td>text</td>
+<td>Notes</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="pmlb_xenograft">PMLB_xenograft<a class="headerlink" href="#pmlb_xenograft" title="Anchor link to this section for reference">#</a></h2>
+<p><strong>Parent:</strong> <code>PMLB_specimen</code><br />
+<strong>Children:</strong> <code>pathogen_assay</code>, <code>STR_assay</code>, <code>histology_assay</code>, <code>WGS</code>, <code>WES</code>, <code>RNAseq</code>, <code>ATAC</code></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required</th>
+<th>Field Type</th>
+<th>Input Hint</th>
+<th>Permissible Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sysid</td>
+<td>Yes</td>
+<td>string</td>
+<td>Unique xenograft ID</td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>Yes</td>
+<td>string</td>
+<td>Xenograft name</td>
+<td></td>
+</tr>
+<tr>
+<td>xenograft_PPID</td>
+<td>Yes</td>
+<td>string</td>
+<td>Xenograft PPID</td>
+<td></td>
+</tr>
+<tr>
+<td>primary_study_name</td>
+<td>Yes</td>
+<td>string</td>
+<td>Study name</td>
+<td></td>
+</tr>
+<tr>
+<td>associate_studies</td>
+<td>No</td>
+<td>string</td>
+<td>Related studies</td>
+<td></td>
+</tr>
+<tr>
+<td>alias.id</td>
+<td>No</td>
+<td>string</td>
+<td>Alternate ID</td>
+<td></td>
+</tr>
+<tr>
+<td>sample_class</td>
+<td>Yes</td>
+<td>categorical</td>
+<td>Sample class</td>
+<td></td>
+</tr>
+<tr>
+<td>source_organoid_modeID</td>
+<td>No</td>
+<td>string</td>
+<td>Source organoid model ID</td>
+<td></td>
+</tr>
+<tr>
+<td>source_organoid_passage</td>
+<td>No</td>
+<td>numeric</td>
+<td>Passage number</td>
+<td></td>
+</tr>
+<tr>
+<td>source_organoid_collection_date</td>
+<td>No</td>
+<td>date</td>
+<td>yyyy-mm-dd</td>
+<td></td>
+</tr>
+<tr>
+<td>sample_SNAP_status</td>
+<td>No</td>
+<td>categorical</td>
+<td>SNAP frozen</td>
+<td>Yes/No</td>
+</tr>
+<tr>
+<td>sample_histo/blockID</td>
+<td>No</td>
+<td>string</td>
+<td>Block ID</td>
+<td></td>
+</tr>
+<tr>
+<td>sample_weight(g)</td>
+<td>No</td>
+<td>numeric</td>
+<td>Weight in g</td>
+<td></td>
+</tr>
+<tr>
+<td>model_generated_by</td>
+<td>No</td>
+<td>string</td>
+<td>Lab/PI</td>
+<td></td>
+</tr>
+<tr>
+<td>model_generation_date</td>
+<td>No</td>
+<td>date</td>
+<td>yyyy-mm-dd</td>
+<td></td>
+</tr>
+<tr>
+<td>host_strain_name</td>
+<td>Yes</td>
+<td>string</td>
+<td>Host strain</td>
+<td></td>
+</tr>
+<tr>
+<td>host_strain_nomenclature</td>
+<td>No</td>
+<td>string</td>
+<td>Standard strain name</td>
+<td></td>
+</tr>
+<tr>
+<td>engraftment_site</td>
+<td>No</td>
+<td>string</td>
+<td>Engraftment site</td>
+<td></td>
+</tr>
+<tr>
+<td>engraftment_type</td>
+<td>No</td>
+<td>string</td>
+<td>Engraftment type</td>
+<td></td>
+</tr>
+<tr>
+<td>engraftment_material</td>
+<td>No</td>
+<td>string</td>
+<td>Material used</td>
+<td></td>
+</tr>
+<tr>
+<td>engraftment_material_status</td>
+<td>No</td>
+<td>string</td>
+<td>Status</td>
+<td></td>
+</tr>
+<tr>
+<td>pubmed_ID</td>
+<td>No</td>
+<td>string</td>
+<td>PubMed reference</td>
+<td></td>
+</tr>
+<tr>
+<td>certis_id</td>
+<td>No</td>
+<td>string</td>
+<td>Vendor ID</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="flow_assay">flow_assay<a class="headerlink" href="#flow_assay" title="Anchor link to this section for reference">#</a></h2>
+<p><strong>Parent:</strong> <code>PMLB_organoid</code></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required</th>
+<th>Field Type</th>
+<th>Input Hint</th>
+<th>Permissible Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sysid</td>
+<td>Yes</td>
+<td>string</td>
+<td>Unique ID</td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>Yes</td>
+<td>string</td>
+<td>Assay name</td>
+<td></td>
+</tr>
+<tr>
+<td>passage_number</td>
+<td>Yes</td>
+<td>integer</td>
+<td>Passage</td>
+<td></td>
+</tr>
+<tr>
+<td>flow_assay_date</td>
+<td>Yes</td>
+<td>date</td>
+<td>yyyy-mm-dd</td>
+<td></td>
+</tr>
+<tr>
+<td>flow_assay_technician</td>
+<td>No</td>
+<td>string</td>
+<td>Technician</td>
+<td></td>
+</tr>
+<tr>
+<td>CD326</td>
+<td>No</td>
+<td>numeric</td>
+<td>Expression</td>
+<td></td>
+</tr>
+<tr>
+<td>mH2K</td>
+<td>No</td>
+<td>numeric</td>
+<td>Expression</td>
+<td></td>
+</tr>
+<tr>
+<td>CD133</td>
+<td>No</td>
+<td>numeric</td>
+<td>Expression</td>
+<td></td>
+</tr>
+<tr>
+<td>flow_assay_comment</td>
+<td>No</td>
+<td>text</td>
+<td>Notes</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="growth_assay">growth_assay<a class="headerlink" href="#growth_assay" title="Anchor link to this section for reference">#</a></h2>
+<p><strong>Parent:</strong> <code>PMLB_organoid</code></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required</th>
+<th>Field Type</th>
+<th>Input Hint</th>
+<th>Permissible Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sysid</td>
+<td>Yes</td>
+<td>string</td>
+<td>Unique ID</td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>Yes</td>
+<td>string</td>
+<td>Assay name</td>
+<td></td>
+</tr>
+<tr>
+<td>passage_number</td>
+<td>Yes</td>
+<td>integer</td>
+<td>Passage</td>
+<td></td>
+</tr>
+<tr>
+<td>doubling_rate</td>
+<td>No</td>
+<td>numeric</td>
+<td>Rate</td>
+<td></td>
+</tr>
+<tr>
+<td>growth_assay_date</td>
+<td>Yes</td>
+<td>date</td>
+<td>yyyy-mm-dd</td>
+<td></td>
+</tr>
+<tr>
+<td>growth_assay_technician</td>
+<td>No</td>
+<td>string</td>
+<td>Technician</td>
+<td></td>
+</tr>
+<tr>
+<td>growth_assay_comment</td>
+<td>No</td>
+<td>text</td>
+<td>Notes</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="histology_assay">histology_assay<a class="headerlink" href="#histology_assay" title="Anchor link to this section for reference">#</a></h2>
+<p><strong>Parent:</strong> <code>PMLB_organoid</code>, <code>PMLB_xenograft</code></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required</th>
+<th>Field Type</th>
+<th>Input Hint</th>
+<th>Permissible Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sysid</td>
+<td>Yes</td>
+<td>string</td>
+<td>Unique ID</td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>Yes</td>
+<td>string</td>
+<td>Assay name</td>
+<td></td>
+</tr>
+<tr>
+<td>passage_number</td>
+<td>Yes</td>
+<td>integer</td>
+<td>Passage</td>
+<td></td>
+</tr>
+<tr>
+<td>histology_assay_date</td>
+<td>Yes</td>
+<td>date</td>
+<td>yyyy-mm-dd</td>
+<td></td>
+</tr>
+<tr>
+<td>block_number</td>
+<td>No</td>
+<td>string</td>
+<td>Block ID</td>
+<td></td>
+</tr>
+<tr>
+<td>histology_results</td>
+<td>No</td>
+<td>text</td>
+<td>Results</td>
+<td></td>
+</tr>
+<tr>
+<td>IHC</td>
+<td>No</td>
+<td>string</td>
+<td>Immunohistochemistry</td>
+<td></td>
+</tr>
+<tr>
+<td>histology_assay_technician</td>
+<td>No</td>
+<td>string</td>
+<td>Technician</td>
+<td></td>
+</tr>
+<tr>
+<td>histology_assay_comment</td>
+<td>No</td>
+<td>text</td>
+<td>Notes</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="pathogen_assay">pathogen_assay<a class="headerlink" href="#pathogen_assay" title="Anchor link to this section for reference">#</a></h2>
+<p><strong>Parent:</strong> <code>PMLB_organoid</code>, <code>PMLB_xenograft</code></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required</th>
+<th>Field Type</th>
+<th>Input Hint</th>
+<th>Permissible Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sysid</td>
+<td>Yes</td>
+<td>string</td>
+<td>Unique ID</td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>Yes</td>
+<td>string</td>
+<td>Assay name</td>
+<td></td>
+</tr>
+<tr>
+<td>passage_number</td>
+<td>Yes</td>
+<td>integer</td>
+<td>Passage</td>
+<td></td>
+</tr>
+<tr>
+<td>pathogen_assay_order_number</td>
+<td>No</td>
+<td>string</td>
+<td>Order number</td>
+<td></td>
+</tr>
+<tr>
+<td>pathogen_assay_type</td>
+<td>Yes</td>
+<td>string</td>
+<td>Type</td>
+<td></td>
+</tr>
+<tr>
+<td>pathogen_assay_date</td>
+<td>Yes</td>
+<td>date</td>
+<td>yyyy-mm-dd</td>
+<td></td>
+</tr>
+<tr>
+<td>pathogen_assay_technician</td>
+<td>No</td>
+<td>string</td>
+<td>Technician</td>
+<td></td>
+</tr>
+<tr>
+<td>pathogen_result</td>
+<td>No</td>
+<td>string</td>
+<td>Result</td>
+<td></td>
+</tr>
+<tr>
+<td>pathogen_assay_comment</td>
+<td>No</td>
+<td>text</td>
+<td>Notes</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="str_assay">STR_assay<a class="headerlink" href="#str_assay" title="Anchor link to this section for reference">#</a></h2>
+<p><strong>Parent:</strong> <code>PMLB_organoid</code>, <code>PMLB_xenograft</code></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required</th>
+<th>Field Type</th>
+<th>Input Hint</th>
+<th>Permissible Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sysid</td>
+<td>Yes</td>
+<td>string</td>
+<td>Unique ID</td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>Yes</td>
+<td>string</td>
+<td>Assay name</td>
+<td></td>
+</tr>
+<tr>
+<td>passage_number</td>
+<td>Yes</td>
+<td>integer</td>
+<td>Passage</td>
+<td></td>
+</tr>
+<tr>
+<td>STR_assay_date</td>
+<td>Yes</td>
+<td>date</td>
+<td>yyyy-mm-dd</td>
+<td></td>
+</tr>
+<tr>
+<td>control</td>
+<td>No</td>
+<td>string</td>
+<td>Control used</td>
+<td></td>
+</tr>
+<tr>
+<td>control_type</td>
+<td>No</td>
+<td>string</td>
+<td>Control type</td>
+<td></td>
+</tr>
+<tr>
+<td>%match</td>
+<td>No</td>
+<td>numeric</td>
+<td>Match percentage</td>
+<td></td>
+</tr>
+<tr>
+<td>STR_assay_technician</td>
+<td>No</td>
+<td>string</td>
+<td>Technician</td>
+<td></td>
+</tr>
+<tr>
+<td>STR_assay_comment</td>
+<td>No</td>
+<td>text</td>
+<td>Notes</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="atac-rnaseq-wgs-wes">ATAC / RNAseq / WGS / WES<a class="headerlink" href="#atac-rnaseq-wgs-wes" title="Anchor link to this section for reference">#</a></h2>
+<p><strong>Parent:</strong> <code>PMLB_specimen</code>, <code>PMLB_organoid</code>, <code>PMLB_xenograft</code></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required</th>
+<th>Field Type</th>
+<th>Input Hint</th>
+<th>Permissible Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sysid</td>
+<td>Yes</td>
+<td>string</td>
+<td>Unique ID</td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>Yes</td>
+<td>string</td>
+<td>Assay name</td>
+<td></td>
+</tr>
+<tr>
+<td>passage_number</td>
+<td>Yes</td>
+<td>integer</td>
+<td>Passage</td>
+<td></td>
+</tr>
+<tr>
+<td>library_kit</td>
+<td>Yes</td>
+<td>string</td>
+<td>Library prep kit</td>
+<td></td>
+</tr>
+<tr>
+<td>sequencing_platform</td>
+<td>Yes</td>
+<td>string</td>
+<td>Platform used</td>
+<td>Illumina, etc.</td>
+</tr>
+<tr>
+<td>sequencing_company</td>
+<td>No</td>
+<td>string</td>
+<td>Vendor</td>
+<td></td>
+</tr>
+<tr>
+<td>quote_number</td>
+<td>No</td>
+<td>string</td>
+<td>Quote reference</td>
+<td></td>
+</tr>
+<tr>
+<td>expected_depth</td>
+<td>No</td>
+<td>numeric</td>
+<td>Expected sequencing depth</td>
+<td></td>
+</tr>
+<tr>
+<td>actual_depth</td>
+<td>No</td>
+<td>numeric</td>
+<td>Achieved sequencing depth</td>
+<td></td>
+</tr>
+<tr>
+<td>humam_genome_depth</td>
+<td>No</td>
+<td>numeric</td>
+<td>Coverage</td>
+<td></td>
+</tr>
+<tr>
+<td>read_length</td>
+<td>Yes</td>
+<td>numeric</td>
+<td>Read length</td>
+<td></td>
+</tr>
+<tr>
+<td>single_or_paired_end</td>
+<td>Yes</td>
+<td>categorical</td>
+<td>PE/SE</td>
+<td>Single-end, Paired-end</td>
+</tr>
+<tr>
+<td>sequencing_submitter</td>
+<td>No</td>
+<td>string</td>
+<td>Person</td>
+<td></td>
+</tr>
+<tr>
+<td>sequencing_submission_date</td>
+<td>No</td>
+<td>date</td>
+<td>yyyy-mm-dd</td>
+<td></td>
+</tr>
+<tr>
+<td>sequence_pass_qc</td>
+<td>No</td>
+<td>categorical</td>
+<td>QC flag</td>
+<td>Pass/Fail</td>
+</tr>
+<tr>
+<td>fastq_directory</td>
+<td>No</td>
+<td>string</td>
+<td>Directory</td>
+<td></td>
+</tr>
+<tr>
+<td>fastq_path</td>
+<td>No</td>
+<td>string</td>
+<td>Path</td>
+<td></td>
+</tr>
+<tr>
+<td>sequence_sample_id</td>
+<td>No</td>
+<td>string</td>
+<td>Sample ID</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
 
 
 
@@ -1494,11 +2811,12 @@
   <span class="md-source-file__fact">
     <span class="md-icon" title="Contributors">
       
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
       
     </span>
     <nav>
       
+        <a href="mailto:fengguanqiao321@gmail.com">Guanqiao Feng</a>
     </nav>
   </span>
 
