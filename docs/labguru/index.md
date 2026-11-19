@@ -1,27 +1,43 @@
-# Home
+# Labguru Database
 
-## What is the handbook?
+This section covers how PMLB data is organized in Labguru: how records connect,
+how IDs are named, the full [schema](schema/index.md), and how to
+[upload](upload/index.md), [search](search/index.md), and
+[download](download/index.md) data.
 
-The handbook is a collection of resources for the Cescon Lab. It is intended to be a resource for all Cescon Lab members to learn about the lab, its projects, and how to get involved.
+## How Labguru records connect
 
-{%
-    include-markdown "../../README.md"
-    start="<!--intro-start-->"
-    end="<!--intro-end-->"
-%}
+![How Labguru records connect: case to specimen to organoid and xenograft](images/labguru-record-links.png)
 
-## Want to Contribute?
+Every record traces back to a **case**:
 
-If you're interested in contributing to the Cescon Lab Handbook, we encourage
-you to check out our **[Contributing Section][contributing-to-the-lab-handbook]**.
+| Record | Labguru collection | What it holds |
+|--------|--------------------|---------------|
+| Case | `PMLB_case` | Case-level (patient) information |
+| Specimen | `PMLB_specimen` | Collected material from a case |
+| Organoid | `PMLB_organoid` | Organoid model record (a PDO if derived from a specimen) |
+| Xenograft | `PMLB_xenograft` | Xenograft model record (a PDX if derived from a specimen) |
 
-Whether you're looking to [report an issue][submitting-issues],
-[add new content][adding-content], or
-[suggest an enhancement](#submitting-issues), the [Contributing Section](#contributing-to-the-lab-handbook) has all
-the resources you need to get started. Your contributions help make this
-handbook a valuable tool for the entire lab community!
+Models can also be derived from each other:
 
-!!! tip "This handbook is under active development and open-source!"
+- **ODX** (organoid-derived xenograft): a xenograft grown from an organoid.
+- **XDO** (xenograft-derived organoid): an organoid grown from a xenograft.
 
-    Visit the [GitHub repository](https://github.com/cesconlab/handbook) to
-    see the latest updates and contribute to the project.
+### Trace an organoid back to its case
+
+Follow the organoid's specimen link to the case.
+For an XDO, use the source xenograft record (`source_xenograft_modeID` on the
+organoid) to trace its derivation.
+
+## Where assay records attach
+
+| Assays and sequencing | Linked record types |
+|-----------------------|---------------------|
+| Flow, growth | Organoid |
+| Histology, pathogen, STR | Organoid or xenograft |
+| ATAC, RNAseq, WGS, WES | Specimen, organoid, or xenograft |
+
+## Naming records
+
+All PMLB records use a standard ID format, for example `PHLC0053.TXO1.r1`.
+See [Naming Convention](naming_convention/index.md) for how to read and build these IDs.

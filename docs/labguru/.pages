@@ -2,6 +2,7 @@ title: Labguru Database
 
 nav:
     - Home: index.md
+    - naming_convention
     - schema
     - upload
     - search
