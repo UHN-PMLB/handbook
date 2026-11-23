@@ -1,7 +1,27 @@
 # Labguru Schema
 
-This page documents the schema used in PMLB’s Labguru instance.  
-Each entity has its fields listed in a structured table.  
+This page lists every field in PMLB’s Labguru collections: what each field holds, its data type, and whether it is required.
+Use it when preparing data to upload, to check that your file has the right columns, that required fields are filled in, and that categorical fields use the allowed values.
+
+**Collections on this page**
+
+| Collection | What it is |
+|---|---|
+| [`PMLB_case`](#pmlb_case) | Case-level (patient) information |
+| [`PMLB_specimen`](#pmlb_specimen) | Material collected from a case |
+| [`PMLB_organoid`](#pmlb_organoid) | Organoid model record |
+| [`PMLB_xenograft`](#pmlb_xenograft) | Xenograft model record |
+| [Assays](#flow_assay) | Flow, growth, histology, pathogen, STR, ATAC/RNAseq/WGS/WES |
+
+For how these records link to each other, see the [Labguru overview](../index.md).
+
+**Key fields to know**
+
+- **`sysid`**: Labguru's unique ID for every record.
+- **`name`**: the record's name in Labguru.
+- **Parent link**: organoids and xenografts link to their parent `PMLB_specimen`, and specimens link to their `PMLB_case`.
+- **`sample_class`** (organoid/xenograft): the model code, such as `PO`, `XO` or `OX`.
+- **`source_xenograft_modeID`** (organoid) and **`source_organoid_modeID`** (xenograft): for XDO and ODX models, the ID of the source model.
 
 Columns:  
 - **Required**: Is this field mandatory? (`Yes/No`)  
