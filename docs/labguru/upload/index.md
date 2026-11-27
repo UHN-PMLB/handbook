@@ -8,9 +8,9 @@ Use this guide to add PMLB cases, specimens, models, assay records, and banked s
 !!! note "Check required fields where you enter the data"
     The schema describes what Labguru stores. On a single-record form, check the required markers on that form. In Excel, use the asterisks and header notes in the current template. Leave **System ID** blank for a new collection item and keep the existing ID when updating an item.
 
-## Add a case if not assigned
+## Add a case if it doesn't exist
 
-**Before you start.** Look up the case using its PMLB case alias or identifier. If the case is missing, create it.
+**Before you start.** The case is the first record for a patient; specimens and models all link back to it. Look up the case using its PMLB case alias or identifier. If the case is missing, create it.
 
 **Where.** Go to **Dashboard → PMLB Case** and open the **Add New PMLB case** form.
 
@@ -30,7 +30,7 @@ Use this guide to add PMLB cases, specimens, models, assay records, and banked s
 
 **Where.** Go to **Dashboard → PMLB Specimen → Add New Specimen**.
 
-**Required fields.** [TODO: Verify the single-record form.] The Excel template marks `Name`, `sample_class`, `tumor_normal_designation`, `specimen_collection_site`, and `Parent PMLB_case` as required for the specimen record. See the [specimen schema](../schema/index.md#pmlb_specimen).
+**Required fields.** <!-- TODO: Verify the single-record form. --> The Excel template marks `Name`, `sample_class`, `tumor_normal_designation`, `specimen_collection_site`, and `Parent PMLB_case` as required for the specimen record. See the [specimen schema](../schema/index.md#pmlb_specimen).
 
 **Steps**
 
@@ -38,7 +38,7 @@ Use this guide to add PMLB cases, specimens, models, assay records, and banked s
 2. Enter the specimen class, tumor or normal designation, and collection site from the specimen record.
 3. Link the case, save the specimen, and confirm the saved record opens the correct case.
 
-**Linking.** Link to the existing `PMLB_case` record. In Excel, enter the exact case **Name** or **SysID** in `Parent PMLB_case`. [TODO: Confirm how to select the case in the form.]
+**Linking.** Link to the existing `PMLB_case` record. In Excel, enter the exact case **Name** or **SysID** in `Parent PMLB_case`. <!-- TODO: Confirm how to select the case in the form. -->
 
 ## Add an organoid model
 
@@ -46,15 +46,15 @@ Use this guide to add PMLB cases, specimens, models, assay records, and banked s
 
 **Where.** Go to **Dashboard → PMLB Organoid → Add New Organoid**.
 
-**Required fields.** [TODO: Verify the single-record form.] The Excel template marks `Name`, `sample_class`, and `Parent PMLB_specimen` as required for the model record. It also includes `organoid_PPID` and `primary_study_name`. See the [organoid schema](../schema/index.md#pmlb_organoid).
+**Required fields.** <!-- TODO: Verify the single-record form. --> The Excel template marks `Name`, `sample_class`, and `Parent PMLB_specimen` as required for the model record. It also includes `organoid_PPID` and `primary_study_name`. See the [organoid schema](../schema/index.md#pmlb_organoid).
 
 **Steps**
 
 1. Search for the full model ID to check whether it already exists. Enter the model ID as the name, for example `PHLC0053.TXO1`. See the [Naming Convention](../naming_convention/index.md) for model and sample ID formats.
-2. Set the sample class. The Excel dropdown uses `PO` for patient-derived organoids and `XO` for xenograft-derived organoids. [TODO: Confirm the form labels and what to enter in `organoid_PPID` and `primary_study_name`.]
+2. Set the sample class. The Excel dropdown uses `PO` for patient-derived organoids and `XO` for xenograft-derived organoids. <!-- TODO: Confirm the form labels and what to enter in `organoid_PPID` and `primary_study_name`. -->
 3. Link the specimen. For an XDO, enter the source xenograft’s model ID in `source_xenograft_modeID`. Save and check the specimen and source details on the saved record.
 
-**Linking.** In Excel, enter the specimen record’s exact **Name** or **SysID** in `Parent PMLB_specimen`. The column is marked required with no XDO exception shown. The workbook also has a separate `Parent PMLB_xenograft` column that accepts the source xenograft’s **Name** or **SysID**. [TODO: Confirm when PMLB fills this separate parent link and how staff select both records in the form.]
+**Linking.** In Excel, enter the specimen record’s exact **Name** or **SysID** in `Parent PMLB_specimen`. The column is marked required with no XDO exception shown. The workbook also has a separate `Parent PMLB_xenograft` column that accepts the source xenograft’s **Name** or **SysID**. <!-- TODO: Confirm when PMLB fills this separate parent link and how staff select both records in the form. -->
 
 ## Add a xenograft model
 
@@ -62,23 +62,23 @@ Use this guide to add PMLB cases, specimens, models, assay records, and banked s
 
 **Where.** Go to **Dashboard → PMLB Xenograft → Add New Xenograft**.
 
-**Required fields.** See the [xenograft schema](../schema/index.md#pmlb_xenograft). The schema field list includes `name`, `xenograft_PPID`, `primary_study_name`, `sample_class`, and `host_strain_name`. [TODO: Verify which fields and parent links are required in the form and in the current Excel template.]
+**Required fields.** See the [xenograft schema](../schema/index.md#pmlb_xenograft). The schema field list includes `name`, `xenograft_PPID`, `primary_study_name`, `sample_class`, and `host_strain_name`. <!-- TODO: Verify which fields and parent links are required in the form and in the current Excel template. -->
 
 **Steps**
 
 1. Search for the model ID to check for an existing record. Enter the model ID as the name, following the [Naming Convention](../naming_convention/index.md).
-2. Complete the required fields from the xenograft record. [TODO: Confirm the sample class options and the expected PPID, study, and host strain values.]
+2. Complete the required fields from the xenograft record. <!-- TODO: Confirm the sample class options and the expected PPID, study, and host strain values. -->
 3. Link the specimen. For an ODX, record the source organoid’s model ID. Save and verify the source details.
 
-**Linking.** The specimen is the model’s source record. For an ODX, enter the source model ID in `source_organoid_modeID`. [TODO: Confirm the specimen selector and whether the form has a separate parent organoid link.]
+**Linking.** The specimen is the model’s source record. For an ODX, enter the source model ID in `source_organoid_modeID`. <!-- TODO: Confirm the specimen selector and whether the form has a separate parent organoid link. -->
 
 ## Add assay or sequencing records
 
 **Before you start.** Find the specimen, organoid, or xenograft that the result belongs to. Confirm the passage where applicable.
 
-**Where.** Open the collection for the assay or sequencing method. [TODO: Confirm the collection names and click paths.]
+**Where.** Open the collection for the assay or sequencing method. <!-- TODO: Confirm the collection names and click paths. -->
 
-**Required fields.** Use the following field list to prepare the assay data. [TODO: Verify the required markers for each form and import template.]
+**Required fields.** Use the following field list to prepare the assay data. <!-- TODO: Verify the required markers for each form and import template. -->
 
 | Collection | Fields to check |
 | --- | --- |
@@ -91,7 +91,7 @@ Use this guide to add PMLB cases, specimens, models, assay records, and banked s
 1. Open a new record in the relevant collection. Enter the assay or sequencing information from the source data.
 2. Link the record to the correct specimen or model. Save and check the link and passage on the saved record.
 
-**Linking.** Select the parent appropriate to the assay. [TODO: Verify the parent choices and how to enter the link for each collection.]
+**Linking.** Select the parent appropriate to the assay. <!-- TODO: Verify the parent choices and how to enter the link for each collection. -->
 
 ## Add banked inventory
 
@@ -99,7 +99,7 @@ Use this guide to add PMLB cases, specimens, models, assay records, and banked s
 
 **Where.** For one vial, open the model record and choose **Add Stock**. For a batch, use the Excel template from **Storage → Stocks → Import**.
 
-**Required fields.** The Stocks template marks `Stock name`, `Inventory collection`, and `collection_protocol` as required. Its notes also require a box or storage location. [TODO: Verify the single-vial form and which collection protocol to select for each PMLB banking workflow.] See the [Labguru schema](../schema/index.md) for model-level fields such as `PMLB_banked_location`, `PMLB_banked_date`, and `PMLB_banked_by`.
+**Required fields.** The Stocks template marks `Stock name`, `Inventory collection`, and `collection_protocol` as required. Its notes also require a box or storage location. <!-- TODO: Verify the single-vial form and which collection protocol to select for each PMLB banking workflow. --> See the [Labguru schema](../schema/index.md) for model-level fields such as `PMLB_banked_location`, `PMLB_banked_date`, and `PMLB_banked_by`.
 
 **Steps**
 
